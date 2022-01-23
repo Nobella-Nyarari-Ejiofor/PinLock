@@ -29,6 +29,9 @@ def find_by_user_name(cls, user_name):
 
 @classmethod 
 def account_exists(cls,user_name):
+  """
+  A function that checks whether the input username matches existing username , if it does returns the account
+  """
   for account in cls.user_name:
     if user_name == account.user_name:
       return True
@@ -36,6 +39,9 @@ def account_exists(cls,user_name):
 
 @classmethod
 def display_accounts(cls):
+  """
+  A function that displays all the user's accounts
+  """
   return cls.user_accounts
 
 
