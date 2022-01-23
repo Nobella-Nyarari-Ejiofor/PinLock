@@ -27,4 +27,15 @@ def find_by_user_name(cls, user_name):
     if account.user_name == user_name:
       return account
 
+@classmethod 
+def account_exists(cls,user_name):
+  for account in cls.user_name:
+    if user_name == account.user_name:
+      return True
+  return False
+
+@classmethod
+def display_accounts(cls):
+  return cls.user_accounts
+
 
