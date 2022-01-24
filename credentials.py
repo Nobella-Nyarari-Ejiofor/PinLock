@@ -16,6 +16,7 @@ class Credentials():
   def save_credentials(self):
     Credentials.user_accounts.append(self)
 
+
   @classmethod
   def display_credentials(cls):
     '''
