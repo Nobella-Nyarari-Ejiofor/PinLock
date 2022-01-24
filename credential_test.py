@@ -54,6 +54,5 @@ class TestCredentials(unittest.TestCase):
     self.assertEqual(copied_account.user_name, "twitter_username")
 
 
-
-if __name__ == "__main__":
+if __name__ ==  "__main__":
   unittest.main()
