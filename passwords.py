@@ -17,5 +17,25 @@ def remove_page(self):
   """
   Password.user_password.remove(self)
 
+@classmethod
+def display_page(cls):
+  """
+  Function to display passwords
+  """
+  return cls.user_password
+@classmethod
+def find_by_page(cls, pager):
+        for pagy in cls.user_passwords:
+            if pagy.page == pager:
+                return pagy
+
+@classmethod
+def page_exists(cls, pager):
+        for pagy in cls.user_passwords:
+            if pagy.page == pager:
+                return pagy
+        return False
+
+
 
 
