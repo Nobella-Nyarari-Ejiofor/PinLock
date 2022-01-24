@@ -9,7 +9,6 @@ class Credentials():
     '''
     Initializes the first instance of the credentials object
     '''
-    
     self.account_name = account_name
     self.user_name = user_name
     self.password = password
